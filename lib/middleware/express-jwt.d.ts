@@ -6,5 +6,5 @@ declare global {
         }
     }
 }
-export declare const expressJWT: (key: string, JWT_KEY: string) => (req: Request, res: Response, next: NextFunction) => void;
+export declare const expressJWT: (key: string, JWT_KEY: string, jwtToken?: string | undefined) => (req: Request, res: Response, next: NextFunction) => void;
 //# sourceMappingURL=express-jwt.d.ts.map

@@ -9,12 +9,20 @@ declare global {
   }
 }
 
-export const expressJWT = (key: string, JWT_KEY: string) => {
+export const expressJWT = (key: string, JWT_KEY: string, jwtToken?: string) => {
   return (req: Request, res: Response, next: NextFunction) => {
-    if (!req.bearerToken) {
-      throw new Error("'bearerToken' Not Found in Field of request Object.");
+    const token = jwtToken ? jwtToken : req.bearerToken;
+    if (!token) {
+      throw new Error(
+        "No JWT Token is provided. If you use bearerToken() Middleware then Make Sure it is Applied using express().use(). If you are not Using bearerToken() Middleware then Make Sure you Pass JWT Token as function parameter to expressJWT() Middleware."
+      );
     }
-    const jwtPayload = jwt.verify(req.bearerToken!, JWT_KEY);
-    req[key] = jwtPayload;
+    try {
+      const jwtPayload = jwt.verify(token, JWT_KEY);
+      req[key] = jwtPayload;
+    } catch (error) {
+      console.log(error);
+    }
+    next();
   };
 };
