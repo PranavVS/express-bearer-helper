@@ -1,4 +1,5 @@
 # JAI HIND 🇮🇳
+
 # express-bearer-helper
 
 express-bearer-helper is an NPM package for dealing with the bearer token and JWT decoding in the express.
@@ -6,19 +7,24 @@ express-bearer-helper is an NPM package for dealing with the bearer token and JW
 ## Installation
 
 You can install the package using the node package manager.
+
 ```bash
-npm install express-bearer-helper 
+npm install express-bearer-helper
 ```
+
 ## Middlewares
+
 1. `bearerToken`
 2. `expressJWT`
 
-
 ## Usage
 
-1. ### `bearerToken()` Middleware 
+1. ### `bearerToken()` Middleware
+
 #### Definition
+
 `bearerToken()`
+
 #### Usage Example
 
 ```typescript
@@ -34,15 +40,19 @@ app.listen(3000, () => {
   console.log("App Listening at 3000.");
 });
 ```
-2. ### `expressJWT()` Middleware 
+
+2. ### `expressJWT()` Middleware
+
 #### Definition
+
 `expressJWT(key: string, JWT_KEY: string, jwtToken?: string)`
+
 1. `key` : It is the string key to access the jwt payload like `req.key`
 2. `JWT_KEY`: key string to decode jsonwebtoken.
 3. `jwtToken`: jwt-token if you already parsed the beared token using some other middlewares.
 
-Note:
 #### Usage Example
+
 ```
 //Typescript
 import express, { Request, Response } from "express";
@@ -60,10 +70,13 @@ router.post(
 );
 export { router as someRouter };
 ```
+
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
