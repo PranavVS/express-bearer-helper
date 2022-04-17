@@ -2,6 +2,7 @@
 
 # express-bearer-helper
 
+![GitHub branch checks state](https://img.shields.io/github/checks-status/badges/shields/master) ![Travis (.org)](https://img.shields.io/travis/rust-lang/rust) ![docs.rs](https://img.shields.io/docsrs/regex/latest) [![GitHub issues](https://img.shields.io/github/issues/PranavVS/express-bearer-helper)](https://github.com/PranavVS/express-bearer-helper/issues) [![GitHub license](https://img.shields.io/github/license/PranavVS/express-bearer-helper)](https://github.com/PranavVS/express-bearer-helper) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FPranavVS%2Fexpress-bearer-helper)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FPranavVS%2Fexpress-bearer-helper)
 express-bearer-helper is an NPM package for dealing with the bearer token and JWT decoding in the express.
 
 ## Installation
