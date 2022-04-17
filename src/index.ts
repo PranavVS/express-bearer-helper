@@ -1,1 +1,2 @@
-export * from "./middleware/express-bearer-jwt";
+export * from "./middleware/bearer-token";
+export * from "./middleware/express-jwt";
