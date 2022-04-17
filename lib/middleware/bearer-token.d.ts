@@ -6,5 +6,5 @@ declare global {
         }
     }
 }
-export declare const bearerToken: (req: Request, res: Response, next: NextFunction) => void;
+export declare const bearerToken: () => (req: Request, res: Response, next: NextFunction) => void;
 //# sourceMappingURL=bearer-token.d.ts.map
