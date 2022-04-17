@@ -14,7 +14,7 @@ export const expressJWT = (key: string, JWT_KEY: string) => {
     if (!req.bearerToken) {
       throw new Error("'bearerToken' Not Found in Field of request Object.");
     }
-    const jwtPayload = jwt.verify(JWT_KEY, req.bearerToken!);
+    const jwtPayload = jwt.verify(req.bearerToken!, JWT_KEY);
     req[key] = jwtPayload;
   };
 };
