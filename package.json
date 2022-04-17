@@ -8,7 +8,7 @@
     "build": "rm -rf build && tsc"
   },
   "author": "PranavVS",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/PranavVS/express-bearer-helper.git"
