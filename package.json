@@ -1,8 +1,8 @@
 {
-  "name": "express-bearer-jwt",
+  "name": "express-bearer-helper",
   "version": "1.0.0",
   "description": "Express middleware for JWT token.",
-  "main": "lib/index.js",
+  "main": "lib",
   "types": "lib",
   "scripts": {
     "build": "rm -rf build && tsc"
